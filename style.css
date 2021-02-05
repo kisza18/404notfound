@@ -97,6 +97,9 @@ main {
   * {
     font-size: 10px;
   }
+  main {
+    height: auto;
+  }
 
   .container {
     flex-direction: column;
@@ -115,11 +118,22 @@ main {
 }
 
 @media (max-width: 530px) {
+  .container {
+    padding: 0px;
+  }
+
   .container-image {
     width: 100%;
+    padding: 20px;
   }
 
   .container-content {
     width: 100%;
+    padding: 20px;
+  }
+
+  .container-content h1,
+  .container-content p {
+    margin-bottom: 20px;
   }
 }
